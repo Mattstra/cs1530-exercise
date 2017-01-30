@@ -1,0 +1,17 @@
+apply plugin: 'java'
+
+repositories {
+   mavenCentral()
+}
+
+dependencies {
+  testCompile 'junit:junit:4.12'
+}
+
+task sequencehelp << {
+	println "Integer Sequence Project"
+	println "First argument is either \"lazy\" to run the Lazy Caterer Sequence or \"triangle\" to run the Triangle Numbers Sequence"
+	println "Second argument is the number of integers in the sequence to print"
+}
+
+
